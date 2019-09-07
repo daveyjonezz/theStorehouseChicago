@@ -1,8 +1,8 @@
 # theStorehouseChicago
 
 ## Contributors
-* Davis Birsan
-* Jenni Birsan
-* Jimi Loc Nguyen
-* Adi Cepela
+* Davis Birsan (mercury)
+* Jenni Birsan (jupiter)
+* Jimi Loc Nguyen (venus)
+* Adi Cepela (mars)
 * Joel Lopez - logo design
