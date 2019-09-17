@@ -30,10 +30,5 @@ for (let i = 0; i < links.length; i++) {
 // });
 
 $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    if(scroll < 300){
-        $('.navbar-fixed-top').css('background', 'transparent');
-    } else{
-        $('.navbar-fixed-top').css('background', 'rgba(23, 162, 184, 0.9)');
-    }
+	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
 });
