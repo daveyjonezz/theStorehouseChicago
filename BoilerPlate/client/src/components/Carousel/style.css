@@ -1,0 +1,31 @@
+.eboardimg{
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 100%;
+    width: 100%;
+    /* For text formatting. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
+    border-radius:50%;
+}
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 900px; 
+    height: 600px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    border-radius:50%;
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
