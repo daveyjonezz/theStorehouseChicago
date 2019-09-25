@@ -10,13 +10,10 @@ function Section({background, children}) {
   return (
 
     <section className="aos-init asos-animate"
-    className={background
-      .split(" ")
-      .map(background => "section background " + background)
-      .join(" ")}
+    className={background.split(" ").map(background => "section background " + background).join(" ")}
      >
         {children}
     </section>
-  )}
+  )}  
 
 export default Section;
