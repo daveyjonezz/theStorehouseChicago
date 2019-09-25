@@ -1,0 +1,60 @@
+.section {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 100vh;
+    /* For text formatting. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
+  }
+  /* .parallax::after { */
+    /* Display and position the pseudo-element */
+    /* content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    /* Move the pseudo-element back away from the camera,
+       * then scale it back up to fill the viewport.
+       * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    /* transform: translateZ(-1px) scale(1); */
+    /* Force the background image to fill the whole element. */
+    /* background-size: 100%; */
+    /* Keep the image from overlapping sibling elements. */
+    /* z-index: -1; */
+  /* } */
+  
+  /* The styling for the static div. */
+  
+  .static {
+    background: beige;
+  }  
+
+  
+.bg1 {
+    background-image: url('/images/adult-beanie-crisis-220365.jpg');
+  }
+  
+  .bg2 {
+    background-image: url('https://placekitten.com/g/800/600');
+  }
+
+  .bg3{
+    background-image: url('/images/homeless1.jpg');
+  }
+
+  .tshirt{
+    background-image: url('/images/tshirt.jpg')
+  }
+
+  .logo{
+    height:250px;
+  }
+
+  .background {
+    background-size: 100%;
+  }
