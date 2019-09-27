@@ -6,7 +6,7 @@ import React, {Component} from "react";
 import Nav from "../components/Nav";
 import Wrapper from "../components/Wrapper"
 import Section from "../components/Section"
-import ImageCard from "../components/ImageCard"
+import {ImageCard} from "../components/ImageCard"
 import Carousel from "../components/Carousel"
 import { Row, Col } from "../components/Grid";
 import AOS from 'aos';

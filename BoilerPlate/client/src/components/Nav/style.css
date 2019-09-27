@@ -1,15 +1,28 @@
-.navbar a {
+  /* NAV BAR CSS */
+
+  #titleStore {
+    font-family: "Calluna W01 Regular";
+    padding-right: 5px
+  }
+
+  .navbar a {
     color: #cabcb0
   }
-  
+
   .navbar-brand {
     font-size: 1.75em
+  }
+
+  #titleCity {
+    font-size: .7em;
+    letter-spacing: 0.2em;
+    padding-left: 5px
   }
 
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(202,188,176, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
-  
+
   .navbar {
     background-color: transparent;
     z-index: 20;
@@ -19,20 +32,45 @@
     padding: 0 5px
   }
 
-  
-@media only screen and (max-width:990px) {
+  @media only screen and (max-width:990px) {
     .navbar li {
       padding: 0
     }
   }
-  
+
   @media only screen and (min-width:990px) {
-    .active, ul a:hover {
-      color: #A5B9B9 !important;
-      border-bottom: 2px solid #A5B9B9
+    nav ul li a, nav ul li a:after, nav ul li a:before {
+      transition: all .5s;
     }
+    nav ul li a:hover {
+      color: #555;
+    }
+
+    nav ul li a.selected{
+      color: #555;
+    }
+    
+    div.stroke ul li a {
+      position: relative;
+    }
+    div.stroke ul li a:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #aaa;
+      height: 1px;
+    }
+    div.stroke ul li a:hover:after {
+      width: 100%;
+    }
+    
   }
-  
+
   .icon-bar {
     width: 22px;
     height: 2px;
@@ -41,54 +79,53 @@
     transition: all 0.2s;
     margin-top: 4px
   }
-  
+
   .navbar-toggler {
     border: none;
     background: transparent !important;
   }
-  
+
   .navbar-toggler .top-bar {
     transform: rotate(45deg);
     transform-origin: 10% 10%;
   }
-  
+
   .navbar-toggler .middle-bar {
     opacity: 0;
   }
-  
+
   .navbar-toggler .bottom-bar {
     transform: rotate(-45deg);
     transform-origin: 10% 90%;
   }
-  
+
   .navbar-toggler.collapsed .top-bar {
     transform: rotate(0);
   }
-  
+
   .navbar-toggler.collapsed .middle-bar {
     opacity: 1;
   }
-  
+
   .navbar-toggler.collapsed .bottom-bar {
     transform: rotate(0);
   }
-  
+
   .navbar-default {
     transition: 500ms ease;
     background: transparent;
   }
-  
+
   .navbar-default.scrolled {
     background: #000;
   }
 
-  .navbar{
-    transition:500ms ease;
-  }
-  .navbar.scrolled{
-    background:#000;
+  .navbar {
+    transition: 500ms ease;
   }
 
-  .nav-logo{
-    height:100px
+  .navbar.scrolled {
+    background: #000;
   }
+
+  /* NAV BAR CSS END */

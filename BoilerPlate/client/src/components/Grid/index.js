@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./style.css";
 // Exporting the Container, Row, and Col components from this file
 
 // This Container component allows us to use a bootstrap container without worrying about class names
@@ -20,6 +20,28 @@ export function Col({ size, children }) {
       className={size
         .split(" ")
         .map(size => "col-" + size)
+        .join(" ")}
+    >
+      {children}
+    </div>
+  );
+}
+
+export function StoryRow({ rowClass, visible, children }) {
+  return <div
+  className={rowClass
+    .split(" ")
+    .map(rowClass => rowClass)
+    .join(" ") }
+  >{children}</div>;
+}
+
+export function StoryCol({ colClass, children }) {
+  return (
+    <div
+      className={colClass
+        .split(" ")
+        .map(colClass => colClass)
         .join(" ")}
     >
       {children}

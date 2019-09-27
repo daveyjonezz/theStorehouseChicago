@@ -3,7 +3,7 @@ import "./style.css";
 
 
 
-function ImageCard({imgsrc, children}) {
+export function ImageCard({imgsrc, children}) {
   return (
 <div>
     <img alt="img"className="profilepic" src={imgsrc
@@ -13,4 +13,13 @@ function ImageCard({imgsrc, children}) {
 </div>
   )}
 
-export default ImageCard;
+export function StoryImage({Storyimgsrc, StoryImage, handleFade, children}){
+  return(
+    <img onClick={handleFade} alt="Sponsoree" className={StoryImage.split(" ").map(StoryImage => StoryImage).join(" ")}
+    src={Storyimgsrc
+      .split(" ")
+      .map(Storyimgsrc => Storyimgsrc)
+      .join(" ")}
+    ></img>
+  )
+}

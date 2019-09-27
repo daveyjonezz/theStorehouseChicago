@@ -5,7 +5,7 @@ function Nav() {
   return (
     <nav className="navbar fixed-top navbar-expand-lg">
         <div className="container-fluid">
-            <a className="navbar-brand" href="#"><span><img class="nav-logo" src="/images/logo2.png"/></span><span id="titleStore">The Storehouse</span>  | <span id="titleCity">CHICAGO</span></a>
+            <a className="navbar-brand d-flex align-items-center" href="/"><span><img width="65" height="100%" alt="Nav Bar Logo" src="/images/NavBarLogo.png"/></span><span id="titleStore">The Storehouse</span>  | <span id="titleCity">CHICAGO</span></a>
            
             <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,13 +13,13 @@ function Nav() {
                 <span className="icon-bar middle-bar"></span>
                 <span className="icon-bar bottom-bar"></span>
             </button>
-            <div className="collapse navbar-collapse w-100 order-2" id="navbarNav">
+            <div className="collapse navbar-collapse stroke w-100 order-2" id="navbarNav">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Bio <span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="/stories">Stories</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Newsletter</a>
+                        <a className="nav-link" href="#">Merch</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#">Donate</a>
