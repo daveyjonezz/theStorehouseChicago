@@ -1,8 +1,10 @@
 import React from "react";
 import "./style.css";
+import Fade from 'react-reveal/Fade';
 
 function Nav() {
   return (
+  <Fade top duration={1500} delay={1000}>
     <nav className="navbar fixed-top navbar-expand-lg">
         <div className="container-fluid">
             <a className="navbar-brand d-flex align-items-center" href="/"><span><img width="65" height="100%" alt="Nav Bar Logo" src="/images/NavBarLogo.png"/></span><span id="titleStore">The Storehouse</span>  | <span id="titleCity">CHICAGO</span></a>
@@ -31,7 +33,8 @@ function Nav() {
             </div>
         </div>
     </nav>
-  );
+    </Fade>    
+    );
 }
 
 export default Nav;
