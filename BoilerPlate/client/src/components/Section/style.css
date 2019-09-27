@@ -58,3 +58,9 @@
   .background {
     background-size: 100%;
   }
+
+  .initial{
+    background-image: url('/images/logo.jpg');
+    background-size:75%;
+    background-position: center;
+  }

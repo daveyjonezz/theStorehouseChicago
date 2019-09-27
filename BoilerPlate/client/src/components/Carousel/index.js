@@ -5,7 +5,7 @@ import "./style.css";
 function Carousel({children}) {
   return (
 
-<div id="slideshow">
+<div id="slideshow2">
    <div>
      <img className="eboardimg" src="/images/eboard1.jpg" alt="eboard1"/>
      <h1>Meghan from Finance</h1>

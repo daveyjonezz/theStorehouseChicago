@@ -12,18 +12,14 @@ import { Row, Col } from "../components/Grid";
 import Zoom from 'react-reveal/Zoom';
 import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
+import Slide from 'react-reveal/Slide';
+import FactCarousel from "../components/FactsCarousel"
+
+
+
 class Homepage extends Component {
 
-  handleScroll = e => {
-    let element = e.target
-    if (element.scrollHeight - element.scrollTop === element.clientHeight) {
-      // do something at end of scroll
-    }
-  }
+
 
 
 render(){
@@ -31,24 +27,46 @@ render(){
 return(
 <div >
 
-<Nav />
+<Nav></Nav>
+
 
 
     <Wrapper>
-      <Section background="bg3">
+      <Fade duration={1000}>
+      <Section background = "initial">
+      <Slide right duration={1000} delay={2500}>
+         <Row>
 
+            <Col size="md-12">
+              <ImageCard imgsrc="/images/homeless1.jpg">
+
+              </ImageCard>
+            </Col>
+
+          </Row>
+      </Slide>
       </Section>
-      <Section background="static">
-      <img class="logo" src="/images/logo2.png"/>
-        <Zoom left>
-      <h1 >The Storehouse Chicago</h1>
-      </Zoom>
-      </Section>
+      </Fade>
+
+    <Section background="static">
+      <Row>
+            <Col size="md-4">
+                <Fade left>
+                      <FactCarousel>
+
+                      </FactCarousel>
+                </Fade>
+            </Col>
+            <Col size="md-8"> <h1></h1> </Col>
+      </Row>
+    </Section>
+
+
         <Section background="bg1" >
         <Row>
         <Col size="md-3"></Col>
          <Col size="md-6">
-           <Fade top>
+           <Fade top duration={2000}>
         <h2>Our mission as The StoreHouse Chicago is to come alongside and aid the people in our city to achieve their goals, empower them as individuals, and equip them for their future.</h2>
         </Fade>
       </Col>
@@ -60,17 +78,17 @@ return(
      <Row>
        
         <Col size="md-4">
-        <Fade left>
+        <Fade left duration={2000}>
           <ImageCard imgsrc="/images/profile1.jpg"></ImageCard>
           </Fade>
         </Col>
         <Col size="md-4">
-          <Fade top>
+          <Fade top duration={2000}>
         <ImageCard imgsrc="/images/profile2.jpg"></ImageCard>
         </Fade>
         </Col>
         <Col size="md-4">
-        <Fade right>
+        <Fade right duration={2000}>
         <ImageCard imgsrc="/images/profile3.jpg"></ImageCard>
         </Fade>
         </Col>
@@ -93,14 +111,17 @@ return(
       <Section background="static">
         <Row>
 
-          <Col size="md-12">
+          <Col size="md-6">
             <h1>E-Board</h1>
           <Carousel></Carousel>
           </Col>
 
+
         </Row>
 
       </Section>
+
+
 
 
     </Wrapper>
