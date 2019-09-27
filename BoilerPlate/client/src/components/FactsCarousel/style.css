@@ -1,4 +1,4 @@
-.eboardimg{
+.factpic{
     position: relative;
     /* The height of the container. Must be set, but it doesn't really matter what the value is. */
     height: 100%;
@@ -9,20 +9,20 @@
     justify-content: center;
     color: white;
     text-shadow: 0 0 5px #000;
-    border-radius:50%;
+    border-radius:15%;
 }
 
-#slideshow2 { 
+#slideshow { 
     margin: 50px auto; 
     position: relative; 
     width: 600px; 
     height: 400px; 
     padding: 10px; 
     box-shadow: 0 0 20px rgba(0,0,0,0.4); 
-    border-radius:50%;
+    border-radius:15%;
 }
 
-#slideshow2 > div { 
+#slideshow > div { 
     position: absolute; 
     top: 10px; 
     left: 10px; 
