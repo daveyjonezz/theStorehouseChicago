@@ -10,6 +10,11 @@
     color: white;
     text-shadow: 0 0 5px #000;
   }
+
+.small-section{
+  height: 30vh;
+
+}
   /* .parallax::after { */
     /* Display and position the pseudo-element */
     /* content: " ";
@@ -63,4 +68,8 @@
     background-image: url('/images/logo.jpg');
     background-size:75%;
     background-position: center;
+  }
+
+  .contact{
+    background-image: url('/images/contactus2.jpg');
   }
