@@ -1,10 +1,11 @@
 import React from "react";
 import "./style.css";
 
-function Spacer() {
+function Spacer({children}) {
     return (
     <div className="spacer">
         &nbsp;
+        {children}
     </div>
     );
 }

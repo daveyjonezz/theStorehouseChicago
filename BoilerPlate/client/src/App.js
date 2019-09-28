@@ -4,6 +4,7 @@ import Homepage from "./pages/Homepage";
 import Stories from "./pages/Stories"
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav"
+import Merch from "./pages/Merch.js"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
@@ -15,10 +16,11 @@ function App() {
     <Router>
        
       <>
-      <Nav/>
+      
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path="/stories" component={Stories} />
+          <Route exact path="/merch" component={Merch} />
           <Route component={NoMatch} />
         </Switch> 
 
