@@ -2,3 +2,50 @@
     height: 80%;
     display:flex;
 }
+
+.fadeIn{
+    opacity:1;
+    width:100px;
+    height:100px;
+    transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+
+}
+
+
+ .container {
+    max-width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow-x: hidden;
+}
+
+.col-avocado{
+    top:20vh;
+}
+
+.col-lime{
+    top:30vh;
+    left:10vh
+}
+
+.col-banana{
+    left:5vh
+}
+
+.col-mango{
+    left:40vh
+}
+
+.col-contact{
+    text-align:center;
+    right:25vh;
+    bottom:8vh;
+    background-color:#a3a2a2;
+    border-color:#3d3d3d;
+    border:2px;
+    border-radius: 20px;
+    padding:10px;
+}
+
