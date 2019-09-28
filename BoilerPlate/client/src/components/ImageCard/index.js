@@ -13,9 +13,9 @@ export function ImageCard({imgsrc, children}) {
 </div>
   )}
 
-export function StoryImage({Storyimgsrc, StoryImage, handleFade, children}){
+export function StoryImage({Storyimgsrc, StoryImage, children}){
   return(
-    <img onClick={handleFade} alt="Sponsoree" className={StoryImage.split(" ").map(StoryImage => StoryImage).join(" ")}
+    <img alt="Sponsoree" className={StoryImage.split(" ").map(StoryImage => StoryImage).join(" ")}
     src={Storyimgsrc
       .split(" ")
       .map(Storyimgsrc => Storyimgsrc)
