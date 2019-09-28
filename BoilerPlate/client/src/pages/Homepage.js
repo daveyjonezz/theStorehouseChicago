@@ -1,8 +1,4 @@
 import React, {Component} from "react";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import Books from "./pages/Books";
-// import Detail from "./pages/Detail";
-// import NoMatch from "./pages/NoMatch";
 import Nav from "../components/Nav";
 import Section from "../components/Section"
 import {ImageCard} from "../components/ImageCard"
@@ -11,7 +7,6 @@ import { Row, Container, Col } from "../components/Grid";
 import Zoom from 'react-reveal/Zoom';
 import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
 import FactCarousel from "../components/FactsCarousel"
 import Spacer from "../components/Spacer"
 import JumbotronFooter from "../components/JumbotronFooter";
@@ -35,7 +30,7 @@ return(
     <Container>
       <Fade duration={1000}>
       <Section background = "initial">
-      <Slide right duration={1000} delay={1000}>
+      <Fade right duration={1500} delay={1000}>
          <Row>
 
             <Col size="md-12">
@@ -45,7 +40,7 @@ return(
             </Col>
 
           </Row>
-      </Slide>
+      </Fade>
       </Section>
       </Fade>
 

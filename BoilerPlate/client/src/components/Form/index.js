@@ -8,7 +8,7 @@ export function Input(props) {
     <div className="form-group row justify-content-center">
 
       <div className="col-xs-8">
-      <label for="InputEmail">Email address</label>
+      <label for="InputEmail">Subscribe to news from us</label>
       <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
       <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>

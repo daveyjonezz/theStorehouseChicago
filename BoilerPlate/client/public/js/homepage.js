@@ -6,23 +6,23 @@ $("#slideshow > div:gt(0)").hide();
 
 setInterval(function() { 
   $('#slideshow > div:first')
-    .fadeOut(3500)
+    .fadeOut(4000)
     .next()
-    .fadeIn(3500)
+    .fadeIn(4000)
     .end()
     .appendTo('#slideshow');
-},  3500);
+},  4000);
 
 $("#slideshow2 > div:gt(0)").hide();
 
 setInterval(function() { 
   $('#slideshow2 > div:first')
-    .fadeOut(3000)
+    .fadeOut(4000)
     .next()
-    .fadeIn(3000)
+    .fadeIn(4000)
     .end()
     .appendTo('#slideshow2');
-},  3000);
+},  4000);
 // Loop through the buttons and add the active class to the current/clicked button
 for (let i = 0; i < links.length; i++) {
     links[i].addEventListener("click", function() {

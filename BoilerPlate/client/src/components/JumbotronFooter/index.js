@@ -15,8 +15,11 @@ function JumbotronFooter() {
       <Input></Input>
 
       <FormBtn>Submit</FormBtn>
+      
      <hr></hr>
-      <h5 style={{textAlign:"center"}}>EST. 2019</h5>
+
+     <a href="/contact" style={{color:"#CABCB0"}}><h4>Contact us</h4></a>
+      <h6 style={{textAlign:"center"}}>EST. 2019</h6>
     </div>
   );
 }
