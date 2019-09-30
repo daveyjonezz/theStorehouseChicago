@@ -1,4 +1,4 @@
-.container {
+.storiesContain {
     height: 80%;
     display:flex;
 }
@@ -12,7 +12,7 @@
 }
 
 
- .container {
+ .merchContain {
     max-width: 100%;
     padding-right: 0px;
     padding-left: 0px;

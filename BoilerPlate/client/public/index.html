@@ -31,6 +31,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/stories.css">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="175426603690-drdmku86237315tbehnsel1f6gj4ice4.apps.googleusercontent.com">
     <title>The Storehouse Chicago</title>
   </head>
   <body>
@@ -68,9 +71,25 @@
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      <script src="js/homepage.js"></script>
      <script src="js/stories.js"></script>
-
- 
-
-
+     <script>
+      function onSuccess(googleUser) {
+        console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+      }
+      function onFailure(error) {
+        console.log(error);
+      }
+      function renderButton() {
+        gapi.signin2.render('my-signin2', {
+          'scope': 'profile email',
+          'width': 240,
+          'height': 50,
+          'longtitle': false,
+          'theme': 'dark',
+          'onsuccess': onSuccess,
+          'onfailure': onFailure
+        });
+      }
+    </script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
   </body>
 </html>

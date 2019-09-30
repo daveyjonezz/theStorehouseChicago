@@ -1,0 +1,46 @@
+/* CSS FOR STORIES PAGE*/
+.story1, .story2, .story3{
+    display: none;
+  }
+  
+  .bioImage-1,.bioImage-2,.bioImage-3{
+    padding:0
+  }
+  
+  .spacer
+  {
+      width: 100%;
+      height: 75px;
+  }
+  
+  .text-back{
+    background-color: #efefef;
+    padding-top: 10px;
+    height: 300px;
+    overflow-y: scroll;
+  }
+
+  .noscroll{
+    overflow: hidden;
+  }
+  
+  h2, h5, h6{
+    padding-left: 15px
+  }
+  
+  .text-back>button, .modal-footer>button{
+  float: right;
+  color: #CABCB0;
+  margin: 15px 0;
+  }
+  
+  .text-back>button:hover, .modal-footer>button:hover{
+    color: #CABCB0;
+    }
+  
+  h5{
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+/* CSS FOR STORIES PAGE END*/
