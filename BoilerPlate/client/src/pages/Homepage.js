@@ -23,7 +23,7 @@ render(){
 
 return(
 <>
-<Nav/>
+{/* <Nav/> */}
 <Spacer/>
 
 

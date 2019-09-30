@@ -19,7 +19,7 @@ return(
     <>
     <Spacer/>
     <Container>
-    <Nav/>
+    {/* <Nav/> */}
         <Fade>
             <Section background = "initial">
                     <Row>
@@ -39,15 +39,15 @@ return(
             <Col size="md-6 banana">
                 <Carousel showThumbs={false} width="100vh" showStatus={false} >        
                             <div >
-                                <img src="/images/fruit1.jpg" />
+                                <img alt="" src="/images/fruit1.jpg" />
                                 <p className="legend">Banana 1</p>
                             </div>
                             <div >
-                                <img src="/images/banana2.jpg" />
+                                <img alt="" src="/images/banana2.jpg" />
                                 <p className="legend">Banana 2</p>
                             </div>
                             <div >
-                                <img src="/images/banana3.jpg" />
+                                <img alt="" src="/images/banana3.jpg" />
                                 <p className="legend">Banana 3</p>
                             </div>
                 </Carousel>
@@ -61,15 +61,15 @@ return(
             <Zoom right duration={1500} delay={1000}> 
                 <Carousel showThumbs={false} width="50vh" showStatus={false} id="avocado">        
                             <div >
-                                <img src="/images/fruit2.jpg" />
+                                <img alt="" src="/images/fruit2.jpg" />
                                 <p className="legend">Avocado 1</p>
                             </div>
                             <div >
-                                <img src="/images/avocado2.jpg" />
+                                <img alt="" src="/images/avocado2.jpg" />
                                 <p className="legend">Avocado 2</p>
                             </div>
                             <div >
-                                <img src="/images/avocado3.jpg" />
+                                <img alt="" src="/images/avocado3.jpg" />
                                 <p className="legend">Avocado 3</p>
                             </div>
                 </Carousel>
@@ -84,15 +84,15 @@ return(
             <Fade right duration={1500} delay={1000}>
                 <Carousel showThumbs={false} width="50vh" showStatus={false}>        
                     <div>
-                        <img src="/images/fruit3.jpg" />
+                        <img alt="" src="/images/fruit3.jpg" />
                         <p className="legend">Lime 1</p>
                     </div>
                     <div>
-                        <img src="/images/lime2.jpg" />
+                        <img alt="" src="/images/lime2.jpg" />
                         <p className="legend">Lime 2</p>
                     </div>
                     <div>
-                        <img src="/images/lime3.jpg" />
+                        <img alt="" src="/images/lime3.jpg" />
                         <p className="legend">Lime 3</p>
                     </div>
                 </Carousel>
@@ -104,15 +104,15 @@ return(
             <Fade bottom duration={1500}>
                 <Carousel showThumbs={false} width="100vh" showStatus={false} >        
                 <div >
-                    <img src="/images/fruit4.jpg" />
+                    <img alt="" src="/images/fruit4.jpg" />
                     <p className="legend">Mango 1</p>
                 </div>
                 <div >
-                    <img src="/images/mango2.jpg" />
+                    <img alt="" src="/images/mango2.jpg" />
                     <p className="legend">Mango 2</p>
                 </div>
                 <div >
-                    <img src="/images/mango3.jpg" />
+                    <img alt="" src="/images/mango3.jpg" />
                     <p className="legend">Mango 3</p>
                 </div>
                 </Carousel>
