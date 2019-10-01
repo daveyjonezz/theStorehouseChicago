@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Nav from "../components/Nav"
+// import Nav from "../components/Nav"
 import Section from "../components/Section"
 import { Row, Container, Col } from "../components/Grid";
 import Zoom from 'react-reveal/Zoom';
@@ -10,8 +10,109 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import JumbotronFooter from "../components/JumbotronFooter"
 
+import API from "../utils/API";
+import SaveButton from "../components/SaveButton";
+import items from "../components/ProductsToBuy";
+import donation from "../components/Donation";
 
 class Merch extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+          items,
+          usershoppingcart: [],
+          sizeValue: "",
+          // size: props.size,
+          donation,
+          donationAmount: "",
+          quantityValue: "",
+        }
+        this.handleSizeChange = this.handleSizeChange.bind(this);
+        this.handleDonationAmount = this.handleDonationAmount.bind(this);
+        this.handleQuantityChange = this.handleQuantityChange.bind(this);
+      };
+    
+      componentDidMount() {
+        //  console.log(this.state.size)
+      }
+    
+      handleSizeChange = (e) => {
+        console.log("EEEEEE")
+        console.log(e.target.value)
+        this.setState({
+          sizeValue: e.target.value,
+        });
+      }
+    
+      handleDonationAmount = (e) => {
+        console.log("AAAAAAAA")
+        console.log(e.target.value)
+        this.setState({
+          donationAmount: e.target.value,
+        })
+      }
+    
+      handleQuantityChange = (e) => {
+        console.log("IIIIIIIII")
+        console.log(e.target.value)
+        this.setState({
+          quantityValue: e.target.value,
+        });
+      }
+    
+      handleAddItemToCart = item => {
+        console.log(item, 'this is an item===== ')
+        console.log(this.state.usershoppingcart, "current state of shopping cart")
+    
+        const newUserShoppingCart = this.state.usershoppingcart
+        newUserShoppingCart.push(item)
+        console.log(newUserShoppingCart, 'this is the shop cart')
+    
+        this.setState({
+          usershoppingcart: newUserShoppingCart
+        })
+    
+        let size = this.state.sizeValue;
+        newUserShoppingCart.push(size);
+        console.log(size, "this is the size going through*******")
+    
+        let userDonation = this.state.donationAmount
+        newUserShoppingCart.push(userDonation);
+        
+        console.log(userDonation, "this is user donation $$$$$$$$")
+        console.log(newUserShoppingCart.price, "$$$$$$$$$$$ donation $$$$$$$$")
+    
+        let newquantity = this.state.quantityValue
+        newUserShoppingCart.push(newquantity);
+        console.log(newquantity, "how many ---------------")
+    
+        console.log("STATE")
+        console.log(this.state.usershoppingcart)
+    
+        API.saveItemToCart({
+          item: this.state.usershoppingcart[0].item,
+          img: this.state.usershoppingcart[0].img,
+          description: this.state.usershoppingcart[0].description,
+          price: this.state.usershoppingcart[0].price,
+          size: this.state.usershoppingcart[1],
+          quantity: this.state.usershoppingcart[3],
+          userDonation: this.state.usershoppingcart[2]
+        })
+        .then(result => {
+           console.log(result.data, "--in save item to cart")
+           this.setState = {
+            // usershoppingcart: [],
+            sizeValue: "",
+            donationAmount: "",
+            quantityValue: "",
+          }
+    
+          // }).then(console.log(this.saveItemToCart, "IN SAVE ITEM TO CART ----------"))
+          // .then(() => API.getUserShoppingCart())
+    
+         });
+        }
 
 render(){
 

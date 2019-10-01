@@ -23,6 +23,8 @@ const App = () =>  {
           <Route exact path="/stories" component={Stories} />
           <Route exact path="/merch" component={Merch} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/userCart/:id" component={Cart} />
+          <Route exact path="/userCart" component={Cart} />
           <Route component={NoMatch} />
         </Switch> 
 

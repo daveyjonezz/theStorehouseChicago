@@ -1,4 +1,4 @@
 module.exports = {
-  Book: require("./book"),
-  Note: require("./note")
+  usershoppingcart: require("./usershoppingcart"),
+ items: require("./items")
 };
