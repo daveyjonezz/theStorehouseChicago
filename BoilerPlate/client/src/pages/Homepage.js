@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Nav from "../components/Nav";
 import Section from "../components/Section"
 import {ImageCard} from "../components/ImageCard"
 import Carousel from "../components/Carousel"
@@ -10,20 +9,41 @@ import Fade from 'react-reveal/Fade';
 import FactCarousel from "../components/FactsCarousel"
 import Spacer from "../components/Spacer"
 import JumbotronFooter from "../components/JumbotronFooter";
-
+import API from "../utils/API";
 
 
 
 class Homepage extends Component {
 
+  state = {
+    email: ""
+};
 
+handleInputChange = event => {
+  const { name, value } = event.target;
+  console.log(name, " : ", value)
+  this.setState({
+      [name]: value
+  });
+};
 
+handleFormSubmit = event => {
+  event.preventDefault();
+  API.newsletter({
+      email: this.state.email
+  }).then(
+        this.setState({
+        email: ""
+      })
+      )
+      .catch(err => console.log(err));
+};
 
 render(){
 
 return(
 <>
-{/* <Nav/> */}
+
 <Spacer/>
 
 
@@ -153,7 +173,7 @@ return(
 
       </Section>
 
-      <JumbotronFooter></JumbotronFooter>
+      <JumbotronFooter onChange={this.handleInputChange} stateEmail={this.state.email} onClick={this.handleFormSubmit}></JumbotronFooter>
 
 
 

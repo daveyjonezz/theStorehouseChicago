@@ -20,5 +20,9 @@ export default {
   createNote: function(noteData){
     console.log(noteData)
     return axios.post("/api/notes", noteData)
+  },
+  newsletter: function(emailData){
+    console.log(emailData)
+    return axios.post("/api/newsletter", emailData)
   }
 };

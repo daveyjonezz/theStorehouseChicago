@@ -34,7 +34,10 @@ class Stories extends Component {
             note: this.state.note,
             from: this.state.from
         })
-            .then(res => alert("SENT"))
+            .then(this.setState({
+                to: "",
+                note: "",
+                from:""}))
             .catch(err => console.log(err));
     };
 
