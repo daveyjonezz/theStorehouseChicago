@@ -1,35 +1,35 @@
 const items = [
     {
-      item: "Grey Men's Sweater",
-      price: "4",
-      description: "Men's Sweatshirt, grey",
+      item: "♂ Grey",
+      price: "24",
+      description: "Men's sweater",
       // size:["XS", "S", "M", "L", "XL", "XXL"],
       quantity:"",
       //sku:"",
       img: "/images/fruit1.jpg"
     },
       {
-      item: "White Men's Sweater",
-      price: "2",
-      description: "Men's Sweatshirt, white",
+      item: "♂ White",
+      price: "22",
+      description: "Men's sweater",
       // size:["XS", "S", "M", "L", "XL", "XXL"],
       quantity:"",
       //sku:"",
       img: "/images/fruit2.jpg"
     },
       {
-      item: "Grey Women's Sweater",
-      price: "4",
-      description: "Women's Sweatshirt, grey",
+      item: "♀ Grey",
+      price: "24",
+      description: "Women's sweater",
       // size:["XS", "S", "M", "L", "XL", "XXL"],
       quantity:"",
       //sku:"",
       img: '/images/fruit3.jpg'
     },
       {
-      item: "White Women's Sweater",
-      price: "4",
-      description: "Women's Sweatshirt, white",
+      item: "♀ White",
+      price: "22",
+      description: "Women's sweater",
       // size:["XS", "S", "M", "L", "XL", "XXL"],
       quantity:"",
       //sku:"",

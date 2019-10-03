@@ -208,14 +208,18 @@ return(
             </Fade>
         </Col>
     </Row>
-    <Row>
-    <div className="ProductDisplay">
-        <ul>
+    
+    <div className="ProductDisplay text-center">
+
+      <Fade left duration={1000}>
+      <Section background="merch">
+        <Row>
           {this.state.items.map(items => {
-            return (
-              <li>
-                <h1>{items.item}</h1>
-                <img style={{height:"100px"}}alt={items.item} src={items.img} />
+            return (<>
+              <Col size="md-3 items">
+
+                <h3>{items.item}</h3>
+                <img style={{height:"100px", borderRadius:"50%"}}alt={items.item} src={items.img} />
                 <p>${items.price}.00</p>
                 <p>{items.description}</p>
                 <select multiple={false} name="sizes"
@@ -244,6 +248,7 @@ return(
                   <option value="9">9</option>
                   <option value="10">10</option>
                 </select>
+                <br></br>
                 <SaveButton onClick={() => {
                   console.log('items', items)
                   console.log('items-state', this.state)
@@ -253,14 +258,26 @@ return(
                 }
                 }>
                 </SaveButton>
-              </li>
+                
+                </Col>
+              </>
             )
           })}
+
+</Row>
+</Section>
+      </Fade>
+
+
+      <Fade right duration={1000}>
+<Section background="merch2">
+<Row>
           {this.state.donation.map(donation => {
             return (
-              <li>
-                <h1>{donation.item}</h1>
-                <img style={{height:"100px"}} alt={donation.item} src={donation.img} />
+              <>
+              <Col size="md-12">
+                <h3>{donation.item}</h3>
+                <img style={{height:"100px", borderRadius:"50%"}} alt={donation.item} src={donation.img} />
                 <p>{donation.description}</p>
                 <p>{donation.size}</p>
                 <textarea onChange={this.handleDonationAmount}
@@ -274,12 +291,14 @@ return(
                   console.log(this.handleAddItemToCart, "this is in the save button click");
                 }
                 }>
-                </SaveButton></li>
+                </SaveButton></Col></>
             )
           })}
-        </ul>
+        </Row>
+        </Section>
+        </Fade>
       </div>
-      </Row>
+      
  <JumbotronFooter></JumbotronFooter>
  </Container>
  

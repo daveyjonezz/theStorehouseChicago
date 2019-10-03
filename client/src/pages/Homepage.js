@@ -74,7 +74,9 @@ return(
                 </Fade>
             </Col>
             <Col size="md-6"> 
-                <p><h1 style={{paddingTop:"25vh", paddingLeft:"2vh", fontSize:"8vh", }}>Did you know that...</h1></p>
+            <Fade bottom>
+                <p><h2 style={{paddingTop:"25vh", paddingLeft:"5vw", fontSize:"4vw", }}>Did you know that...</h2></p>
+                </Fade>
             </Col>
       </Row>
     </Section>
