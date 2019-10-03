@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+
 const userShoppingCartSchema = new Schema({
   
   item: { type: String, required: true },
@@ -11,5 +12,7 @@ const userShoppingCartSchema = new Schema({
   userDonation: {type: String},
   date: { type: Date, default: Date.now }
 });
+
 const usershoppingcart = mongoose.model("usershoppingcart", userShoppingCartSchema);
+
 module.exports =usershoppingcart;
