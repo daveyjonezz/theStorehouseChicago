@@ -1,0 +1,49 @@
+li.slide.selected{
+    background:white;
+}
+/* 
+.cart-list{
+
+        list-style:none;
+        max-height:65vh;
+        margin:0;
+        overflow:auto;
+        overflow-x: hidden;
+        padding:0;
+        text-indent:10px;
+        border:1px solid #000;
+        font-family:arial;
+        height:80vh;
+        width:80vw;
+} */
+
+ol{
+    list-style:none;
+    width:40vw;
+    max-height:60vh;
+    margin:0;
+    overflow:auto;
+    padding:0;
+    text-indent:10px;
+    background:rgb(201, 200, 200);
+    border-radius:10px
+  }
+  .cartitem{
+    line-height:15px;
+    
+  }
+
+
+
+  .itemtotal{
+      padding:10px;
+      margin:10px
+  }
+
+
+  .returntocart{
+     
+    color: rgb(122, 121, 121);
+    
+
+  }

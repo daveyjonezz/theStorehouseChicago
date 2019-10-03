@@ -48,7 +48,7 @@ const Nav = () => {
                                 <a className="nav-link" href="#">Donate</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#"><i className="fas fa-shopping-cart"></i></a>
+                                <a className="nav-link" href="usercart"><i className="fas fa-shopping-cart"></i></a>
                             </li>
                             <li className="nav-item">
                             <div data-onsuccess="onSignIn" data-theme="dark" className="g-signin2"></div>
