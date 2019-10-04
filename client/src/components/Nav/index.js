@@ -39,14 +39,18 @@ const Nav = () => {
                     <div className="collapse navbar-collapse stroke w-100 order-2" id="navbarNav">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
+                                <a className="nav-link" href="/">Home</a>
+                            </li>
+                            <li className="nav-item">
                                 <a className="nav-link" href="/stories">Stories</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/donate">Donate</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/merch">Merch</a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Donate</a>
-                            </li>
+                          
                             <li className="nav-item">
                                 <a className="nav-link" href="usercart"><i className="fas fa-shopping-cart"></i></a>
                             </li>

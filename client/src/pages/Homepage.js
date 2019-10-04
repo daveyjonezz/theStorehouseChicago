@@ -87,7 +87,7 @@ return(
         <Col size="md-1"></Col>
          <Col size="md-5">
            <Zoom top cascade duration={2000}>
-        <p><h1>Our mission as The StoreHouse Chicago 
+        <p style={{background:"rgba(255, 255, 255, 0.589)", padding:"10px", borderRadius:"10%"}}><h1>Our mission as The Storehouse Chicago 
           is to come alongside and aid the people 
           in our city to achieve their goals, empower them as 
           individuals, and equip them for their future.</h1></p>
@@ -97,12 +97,13 @@ return(
       </Row>
 
       </Section>
-<Section background="static small-section">
+<Section background="merch2">
         <Row>
-          <Col size="md-1"></Col>
+          <div className="text-center">
           <Zoom top duration={1000}>
-          <Col size="md-11"> <p><h1 style={{paddingTop:"15%"}}>Meet this week's donoration recipients</h1></p></Col>
+          <Col size="md-12"> <p><h1>Meet this week's donation recipients</h1></p></Col>
           </Zoom>
+          </div>
      
         </Row>
  
@@ -117,7 +118,7 @@ return(
         <Col size="md-4">
         <Fade left duration={1000}>
         
-          <ImageCard imgsrc="/images/profile1.jpg"></ImageCard>
+          <ImageCard className="homepageimg" imgsrc="/images/adi2.jpg" alt="adi"></ImageCard>
           </Fade>
         </Col>
       
@@ -125,7 +126,7 @@ return(
         <Col size="md-4">
         <Fade bottom duration={2000} delay={500}>
          
-        <ImageCard imgsrc="/images/profile2.jpg"></ImageCard>
+        <ImageCard className="homepageimg" imgsrc="/images/jennidavis.jpg" alt="jennidavid"></ImageCard>
         </Fade>
         </Col>
        
@@ -134,7 +135,7 @@ return(
         <Col size="md-4">
         <Fade right duration={1000} delay={1000}>
      
-        <ImageCard imgsrc="/images/profile3.jpg"></ImageCard>
+        <ImageCard className="homepageimg" imgsrc="/images/jimi2.jpg" alt="jimi"></ImageCard>
         </Fade>
         </Col>
         
@@ -164,12 +165,14 @@ return(
 
           <Fade duration={2000}>
 
-          <Col size="md-6">
-            <h1>E-Board</h1>
+          <Col size="md-12">
+            <div className="text-center">
+            <h2>E-Board</h2>
+            </div>
           <Carousel></Carousel>
           </Col>
           </Fade>
-<Col size="md-6"></Col>
+
 
         </Row>
 

@@ -218,7 +218,7 @@ return(
             return (<>
               <Col size="md-3 items">
 
-                <h3>{items.item}</h3>
+                <h5 style={{textAlign:"center"}}>{items.item}</h5>
                 <img style={{height:"100px", borderRadius:"50%"}}alt={items.item} src={items.img} />
                 <p>${items.price}.00</p>
                 <p>{items.description}</p>
