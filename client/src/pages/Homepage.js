@@ -118,7 +118,7 @@ return(
         <Col size="md-4">
         <Fade left duration={1000}>
         
-          <ImageCard className="homepageimg" imgsrc="/images/adi2.jpg" alt="adi"></ImageCard>
+          <ImageCard className="homepageimg" imgsrc="/images/adi3.jpg" alt="adi"></ImageCard>
           </Fade>
         </Col>
       
@@ -126,7 +126,7 @@ return(
         <Col size="md-4">
         <Fade bottom duration={2000} delay={500}>
          
-        <ImageCard className="homepageimg" imgsrc="/images/jennidavis.jpg" alt="jennidavid"></ImageCard>
+        <ImageCard className="homepageimg" imgsrc="/images/jennidavis2.jpg" alt="jennidavid"></ImageCard>
         </Fade>
         </Col>
        
@@ -135,7 +135,7 @@ return(
         <Col size="md-4">
         <Fade right duration={1000} delay={1000}>
      
-        <ImageCard className="homepageimg" imgsrc="/images/jimi2.jpg" alt="jimi"></ImageCard>
+        <ImageCard className="homepageimg" imgsrc="/images/jimi3.jpg" alt="jimi"></ImageCard>
         </Fade>
         </Col>
         

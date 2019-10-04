@@ -151,13 +151,13 @@ return(
     <div className="">
     <Col size="md-12">
         <Fade left cascade duration={1500}>
-        <img src="/images/adi2.jpg" alt="adi" style={{height:"200px", padding:"10px"}}/>
+        <img src="/images/adi3.jpg" alt="adi" style={{height:"200px", padding:"10px"}}/>
  
    
-        <img src="/images/jennidavis.jpg" alt="jennidavis" style={{height:"200px", padding:"10px"}}/>
+        <img src="/images/jennidavis2.jpg" alt="jennidavis" style={{height:"200px", padding:"10px"}}/>
   
     
-        <img src="/images/jimi2.jpg" alt="jimi" style={{height:"200px", padding:"10px"}}/>
+        <img src="/images/jimi3.jpg" alt="jimi" style={{height:"200px", padding:"10px"}}/>
         </Fade>
 
     </Col>
