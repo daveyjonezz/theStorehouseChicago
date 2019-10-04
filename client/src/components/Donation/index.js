@@ -1,3 +1,6 @@
+import "./style.css"
+
+
 const donation = [
     
     {
@@ -5,9 +8,9 @@ const donation = [
       price: "0",
       description: "Write in the amount you would like to donate.",
       // size:["One Size"],
-      quantity:"1",
+      quantity:"",
       //sku: "",
-      img: '/images/mango3.jpg'
+      img: 'https://i.redd.it/9h7f7yyg1su11.jpg'
     }
   ] 
   
