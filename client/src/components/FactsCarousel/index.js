@@ -9,7 +9,7 @@ function FactsCarousel({children}) {
 
 
     <div>
-     <img className="factpic"src="/images/fact4.PNG" alt="facts"/>
+     <img className="factpic"src="/images/stats4.jpg" alt="facts"/>
    </div>
 
 
@@ -18,7 +18,7 @@ function FactsCarousel({children}) {
    </div>
 
    <div>
-     <img className="factpic" src="/images/fact1.PNG" alt="facts"/>
+     <img className="factpic" src="/images/stats1.jpg" alt="facts"/>
    </div>
 
 
@@ -28,7 +28,7 @@ function FactsCarousel({children}) {
 
 
    <div>
-     <img className="factpic"src="/images/fact2.PNG" alt="facts"/>
+     <img className="factpic"src="/images/stats2.jpg" alt="facts"/>
    </div>
 
 
@@ -38,7 +38,7 @@ function FactsCarousel({children}) {
 
 
    <div>
-     <img className="factpic"src="/images/fact3.PNG" alt="facts"/>
+     <img className="factpic"src="/images/stats3.jpg" alt="facts"/>
    </div>
 
 
