@@ -1,3 +1,6 @@
+import "./style.css"
+
+
 const items = [
     {
       item: "♂ Grey",
@@ -6,7 +9,7 @@ const items = [
       // size:["XS", "S", "M", "L", "XL", "XXL"],
       quantity:"",
       //sku:"",
-      img: "/images/fruit1.jpg"
+      img: "https://tachyons.io/img/avatar_1.jpg"
     },
       {
       item: "♂ White",
@@ -15,7 +18,7 @@ const items = [
       // size:["XS", "S", "M", "L", "XL", "XXL"],
       quantity:"",
       //sku:"",
-      img: "/images/fruit2.jpg"
+      img: "https://i.pinimg.com/originals/40/c1/bd/40c1bd174fa0f13f6a025e6e7e44bec4.jpg"
     },
       {
       item: "♀ Grey",
@@ -24,7 +27,7 @@ const items = [
       // size:["XS", "S", "M", "L", "XL", "XXL"],
       quantity:"",
       //sku:"",
-      img: '/images/fruit3.jpg'
+      img: 'https://i.pinimg.com/originals/d8/7f/0e/d87f0e1ecddb955a74f41e1032a8a136.jpg'
     },
       {
       item: "♀ White",
@@ -33,7 +36,7 @@ const items = [
       // size:["XS", "S", "M", "L", "XL", "XXL"],
       quantity:"",
       //sku:"",
-      img: '/images/fruit4.jpg'
+      img: 'https://static.boredpanda.com/blog/wp-content/uploads/2016/03/hairy-fluffy-cat-sky-the-ragdoll-31.jpg'
     }
     // ,
     // {
@@ -46,4 +49,4 @@ const items = [
     // }
   ] 
   
-  export default items;
+  export default items

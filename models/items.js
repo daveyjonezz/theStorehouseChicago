@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+
+
 const itemsSchema = new Schema({
   
   item: { type: String, required: true },
@@ -11,5 +13,7 @@ const itemsSchema = new Schema({
   donationAmount: { type: String},
   date: { type: Date, default: Date.now }
 });
+
 const items = mongoose.model("items", itemsSchema);
+
 module.exports =items;
