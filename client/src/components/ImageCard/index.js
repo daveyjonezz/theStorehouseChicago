@@ -15,11 +15,12 @@ export function ImageCard({imgsrc, children}) {
 
 export function StoryImage({Storyimgsrc, StoryImage, children}){
   return(
+    <>
     <img alt="Sponsoree" className={StoryImage.split(" ").map(StoryImage => StoryImage).join(" ")}
     src={Storyimgsrc
       .split(" ")
       .map(Storyimgsrc => Storyimgsrc)
-      .join(" ")}
-    ></img>
+      .join(" ")}/>
+      </>
   )
 }
