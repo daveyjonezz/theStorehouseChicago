@@ -52,7 +52,7 @@ return(
       <Section background = "initial">
       <Fade right duration={1500} delay={1000}>
          <Row>
-
+ 
             <Col size="md-12">
               <ImageCard imgsrc="/images/homeless1.jpg">
 
