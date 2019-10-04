@@ -20,8 +20,6 @@ const onSignIn = (googleUser) =>{
 
 const Nav = () => {
 
-
-
     return (
 
         <Fade top duration={1000}>

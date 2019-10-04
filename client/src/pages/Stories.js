@@ -47,10 +47,10 @@ class Stories extends Component {
             <>
                 <Spacer />
                 <StoryContainer style={conStyle}>
- 
+  
                     <StoryRow rowClass="d-flex flex-row align-items-center centering">
                         <StoryCol colClass="col-6 col-lg-4 my-auto first">
-                            <StoryImage StoryImage="bioImage-1 img-fluid" Storyimgsrc="/images/jennidavis.jpg"></StoryImage>
+                            <StoryImage StoryImage="bioImage-1 img-fluid" Storyimgsrc="/images/jennidavis.JPG"></StoryImage>
                         </StoryCol>
                         <StoryCol colClass="col-lg-8 text-back my-auto story1">
                             <h2>Meet Jenni &#38; Davis Birsan</h2>
@@ -61,7 +61,7 @@ class Stories extends Component {
                             <h2>Meet Adi Cepela</h2>
                         </StoryCol>
                         <StoryCol colClass="col-6 col-lg-4 my-auto second">
-                            <StoryImage StoryImage="bioImage-2 img-fluid" Storyimgsrc="/images/adi2.jpg"></StoryImage>
+                            <StoryImage StoryImage="bioImage-2 img-fluid" Storyimgsrc="/images/adi2.JPG"></StoryImage>
                         </StoryCol>
                         <StoryCol colClass="col-lg-4 text-back my-auto story2">
                             <h5> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatum nesciunt ea nam cum, fuga, facere est ipsum a totam fugiat rem quod excepturi magnam. Delectus, amet suscipit. Placeat, molestias? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatum nesciunt ea nam cum, fuga, facere est ipsum a totam fugiat rem quod excepturi magnam. Delectus, amet suscipit. Placeat, molestias? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatum nesciunt ea nam cum, fuga, facere est ipsum a totam fugiat rem quod excepturi magnam. Delectus, amet suscipit. Placeat, molestias?</h5>
