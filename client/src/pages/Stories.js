@@ -47,7 +47,7 @@ class Stories extends Component {
             <>
                 <Spacer />
                 <StoryContainer style={conStyle}>
-
+ 
                     <StoryRow rowClass="d-flex flex-row align-items-center centering">
                         <StoryCol colClass="col-6 col-lg-4 my-auto first">
                             <StoryImage StoryImage="bioImage-1 img-fluid" Storyimgsrc="/images/jennidavis.jpg"></StoryImage>
