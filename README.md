@@ -17,10 +17,29 @@ If you would like more information about the Storehouse Chicago in regards to le
 - React JS
 - ES6
 - Mongoose DB
+- Stripe Payment Systems
+- React - Reveal
+- React - Responsive - Carousel
 
+## Deployed Links
+The Storehouse: https://thestorehousechitown.herokuapp.com/
+Stripe Integration: https://002f1205.ngrok.io/
+Stripe GitHub: https://github.com/jennibirsan/stripedemo
 
-# Deployed Link
-https://thestorehousechitown.herokuapp.com/
+## Home Page
+Our home page gives an overview of everything we have to offer. By scrolling through, you will see our mission statement, our board, the people we are sponsoring, and more! Each item is active and will lead you to its respective landing page.
+
+## Merch
+Our merch store has our custom designed sweatshirts that promote our branding and company. We had them designed and stitched for consumers to buy and rep proudly. You can add your preferred items to the cart before checking out. Profits of the merch also go as donations towards our sponsorships.
+
+## Donate
+Our donate page gives you an opportunity to donate to the Storehouse Chicago. Once you enter an amount, it gets added to your cart.
+
+## Stories
+Our stories landing page highlights three families or individuals who we are sponsoring in the community. Funds are targeted and monitored to go to their specific need(s). By partnering with local churches or shelters, we are able to find people who are in need and are able to support. You can donate to these individuals and you can also send a note of encouragement to each respective person(s).
+
+## Cart
+Once you are ready to checkout, you can click the cart icon on the nav bar and it will redirect you to the checkout landing page. You can remove or edit the items in your cart. Using Stripe Payment Systems, we will securely grab credit card information and store it safely in the Stripe database.
 
 ## Contributors
 * Davis Birsan (mercury)
