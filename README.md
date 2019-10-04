@@ -1,4 +1,4 @@
-# theStorehouseChicago<img src="/logo3.jpg"  height="80" width="60"/>
+# The Storehouse Chicago <img src="/logo3.jpg"  height="50" width="30"/>
 
 ## Overview
 Welcome to the Storehouse Chicago! We are a non-profit in the heart of Chicago that lends a helping-hand to struggling families. Chicago is a *very large* city that holds over 2.5 million residents, and where almost 5,500 residents where considered homeless in 2018. Fortunetly, the number of homeless residents has been steadily decreasing for the past three years. Unfortunetly, there are people and families who come into difficult times and face living on the streets. That's where we come in. 
