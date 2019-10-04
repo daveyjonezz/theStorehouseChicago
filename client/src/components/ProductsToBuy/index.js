@@ -18,7 +18,7 @@ const items = [
       img: "/images/fruit2.jpg"
     },
       {
-      item: "Stone",
+      item: "Storm",
       price: "40",
       description: "Cropped Sweater",
       // size:["XS", "S", "M", "L", "XL", "XXL"],
