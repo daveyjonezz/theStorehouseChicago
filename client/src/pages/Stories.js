@@ -61,7 +61,7 @@ class Stories extends Component {
                             <h2>Meet Adi Cepela</h2>
                         </StoryCol>
                         <StoryCol colClass="col-6 col-lg-4 my-auto second">
-                            <StoryImage StoryImage="bioImage-2 img-fluid" Storyimgsrc="./images/adi2.jpg"></StoryImage>
+                            <StoryImage StoryImage="bioImage-2 img-fluid" Storyimgsrc="./images/adi.jpg"></StoryImage>
                         </StoryCol>
                         <StoryCol colClass="col-lg-4 text-back my-auto story2">
                             <h5> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatum nesciunt ea nam cum, fuga, facere est ipsum a totam fugiat rem quod excepturi magnam. Delectus, amet suscipit. Placeat, molestias? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatum nesciunt ea nam cum, fuga, facere est ipsum a totam fugiat rem quod excepturi magnam. Delectus, amet suscipit. Placeat, molestias? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatum nesciunt ea nam cum, fuga, facere est ipsum a totam fugiat rem quod excepturi magnam. Delectus, amet suscipit. Placeat, molestias?</h5>
@@ -73,7 +73,7 @@ class Stories extends Component {
                             <button type="button" className="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalCenter">Note of Encouragement <i className="fa fa-send" aria-hidden="true"></i> </button>
                         </StoryCol>
                         <StoryCol colClass="col-6 col-lg-4 my-auto third">
-                            <StoryImage StoryImage="bioImage-3 img-fluid" Storyimgsrc="./images/jimi2.jpg"></StoryImage>
+                            <StoryImage StoryImage="bioImage-3 img-fluid" Storyimgsrc="./jimi.jpg"></StoryImage>
                         </StoryCol>
                     </StoryRow>
                 </StoryContainer>
