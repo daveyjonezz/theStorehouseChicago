@@ -61,6 +61,8 @@ class Cart extends Component {
      <Section background="static">
      <Row>
        <Fade left duration={1000}>
+
+       <iframe className="checkout" src="https://002f1205.ngrok.io"></iframe>
       <div className="UserShoppingCart cart-list">
        
           <ol>
@@ -85,18 +87,18 @@ class Cart extends Component {
            )}
        </ol>
        
-        
+       <div className="itemtotal">
+      <h3><b>Total:</b>${total}.00</h3>
+
+        <p><a className="returntocart" href="/merch"><strong>ADD MORE TO CART</strong></a></p>
+        </div>
        
        
       </div>
       </Fade>
 
       <Fade right duration={1000}>
-      <div className="itemtotal">
-      <h3><b>Total:</b>${total}.00</h3>
 
-        <p><a className="returntocart" href="/merch"><strong>ADD MORE TO CART</strong></a></p>
-        </div>
         </Fade>
       </Row>
       

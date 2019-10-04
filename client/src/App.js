@@ -7,6 +7,7 @@ import Contact from "./pages/Contact"
 import Merch from "./pages/Merch.js"
 import Nav from "./components/Nav"
 import Cart from "./pages/Cart"
+import Donate from "./pages/Donate"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
@@ -23,6 +24,7 @@ const App = () =>  {
           <Route exact path="/" component={Homepage} />
           <Route exact path="/stories" component={Stories} />
           <Route exact path="/merch" component={Merch} />
+          <Route exact path="/donate" component={Donate} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/userCart/:id" component={Cart} />
           <Route exact path="/userCart" component={Cart} />

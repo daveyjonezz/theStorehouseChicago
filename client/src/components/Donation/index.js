@@ -7,7 +7,7 @@ const donation = [
       // size:["One Size"],
       quantity:"1",
       //sku: "",
-      img: '/images/mango3.jpg'
+      img: '/images/donate.jpg'
     }
   ] 
   

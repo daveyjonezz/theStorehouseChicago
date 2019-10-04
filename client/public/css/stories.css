@@ -30,17 +30,18 @@
   
   .text-back>button, .modal-footer>button{
   float: right;
-  color: #CABCB0;
+  color: rgb(124, 115, 108);
   margin: 15px 0;
   }
   
   .text-back>button:hover, .modal-footer>button:hover{
-    color: #CABCB0;
+    color: rgb(124, 115, 108);
     }
   
   h5{
     text-align: justify;
     text-justify: inter-word;
+    color: rgb(124, 115, 108);
   }
 
 /* CSS FOR STORIES PAGE END*/
