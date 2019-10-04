@@ -22,9 +22,9 @@ If you would like more information about the Storehouse Chicago in regards to le
 - React - Responsive - Carousel
 
 ## Deployed Links
-The Storehouse: https://thestorehousechitown.herokuapp.com/
-Stripe Integration: https://002f1205.ngrok.io/
-Stripe GitHub: https://github.com/jennibirsan/stripedemo
+- The Storehouse: https://thestorehousechitown.herokuapp.com/
+- Stripe Integration: https://002f1205.ngrok.io/
+- Stripe GitHub: https://github.com/jennibirsan/stripedemo
 
 ## Home Page
 Our home page gives an overview of everything we have to offer. By scrolling through, you will see our mission statement, our board, the people we are sponsoring, and more! Each item is active and will lead you to its respective landing page.
