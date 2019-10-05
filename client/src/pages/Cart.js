@@ -5,6 +5,8 @@ import Spacer from "../components/Spacer"
 import Section from "../components/Section"
 import { Row, Container, Col } from "../components/Grid";
 import Fade from 'react-reveal/Fade';
+import {Footer2} from "../components/Footer"
+
 class Cart extends Component {
   state = {
     usershoppingcart: [],
@@ -55,14 +57,15 @@ class Cart extends Component {
     const total = this.total();
     console.log("indisde the render:", this.state.usershoppingcart)
     return (
-      <div>
+      <>
         <Container>
      <Spacer></Spacer>
      <Section background="static">
      <Row>
        <Fade left duration={1000}>
 
-       <iframe className="checkout" src="https://002f1205.ngrok.io"></iframe>
+       <iframe className="checkout" src="https://stripe-thestorehousechicago.herokuapp.com/"></iframe>
+       <Col size="sm-1"></Col>
       <div className="UserShoppingCart cart-list">
        
           <ol>
@@ -70,14 +73,18 @@ class Cart extends Component {
           {this.state.usershoppingcart.map(usershoppingcart =>
             <Col size="md-12">
          <li className="cartitem">
-         <h3>&#x2022;{usershoppingcart.item}</h3 >
+           <br></br>
+         <h3>{usershoppingcart.description}</h3 >
               <img style={{height:"100px", borderRadius:"50%"}}alt={usershoppingcart.item} src={usershoppingcart.img} />
               {/* <p>{usershoppingcart.description}</p> */}
-              <p>item's Price ${usershoppingcart.price}.00</p>
+              <br/>
+              <br/>
+              <p>Price ${usershoppingcart.price}.00</p>
+              <p>Color: {usershoppingcart.item}</p>
               <p>Size: {usershoppingcart.size}</p>
               <p>Quantity: {usershoppingcart.quantity}</p>
               <p>Donation: ${usershoppingcart.userDonation}</p>
-              <h6><b>SubTotal: ${usershoppingcart.price * usershoppingcart.quantity }.00</b></h6>
+              <p><strong>Subtotal: ${usershoppingcart.price * usershoppingcart.quantity }.00</strong></p>
               <DeleteBtn onClick={() => this.handleItemDelete(usershoppingcart._id)} />
               </li>
               <br></br>
@@ -90,7 +97,7 @@ class Cart extends Component {
        <div className="itemtotal">
       <h3><b>Total:</b>${total}.00</h3>
 
-        <p><a className="returntocart" href="/merch"><strong>ADD MORE TO CART</strong></a></p>
+        <p><a className="returntocart" href="/merch"><strong>Add More to Cart</strong></a></p>
         </div>
        
        
@@ -104,7 +111,8 @@ class Cart extends Component {
       
       </Section>
       </Container>
-    </div>
+      <Footer2/>
+    </>
           );
   }
 }

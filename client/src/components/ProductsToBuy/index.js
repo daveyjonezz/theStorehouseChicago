@@ -6,7 +6,7 @@ const items = [
       // size:["XS", "S", "M", "L", "XL", "XXL"],
       quantity:"",
       //sku:"",
-      img: "/images/fruit1.jpg"
+      img: "/images/white-mens-1.jpg"
     },
       {
       item: "Peach",
@@ -15,16 +15,16 @@ const items = [
       // size:["XS", "S", "M", "L", "XL", "XXL"],
       quantity:"",
       //sku:"",
-      img: "/images/fruit2.jpg"
+      img: "/images/peach-mens-1.jpg"
     },
       {
-      item: "Stone",
+      item: "Storm",
       price: "40",
       description: "Cropped Sweater",
       // size:["XS", "S", "M", "L", "XL", "XXL"],
       quantity:"",
       //sku:"",
-      img: '/images/fruit3.jpg'
+      img: '/images/storm-womens-1.jpg'
     },
       {
       item: "Heather Dust",
@@ -33,7 +33,7 @@ const items = [
       // size:["XS", "S", "M", "L", "XL", "XXL"],
       quantity:"",
       //sku:"",
-      img: '/images/fruit4.jpg'
+      img: '/images/heather-womens-1.jpg'
     }
     // ,
     // {

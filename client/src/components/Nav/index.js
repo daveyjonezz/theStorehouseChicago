@@ -1,22 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import Fade from 'react-reveal/Fade';
-import GoogleLogin from 'react-google-login';
 
-const onSignIn = (googleUser) =>{
-    // Useful data for your client-side scripts:
-    var profile = googleUser.getBasicProfile();
-    console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-    console.log('Full Name: ' + profile.getName());
-    console.log('Given Name: ' + profile.getGivenName());
-    console.log('Family Name: ' + profile.getFamilyName());
-    console.log("Image URL: " + profile.getImageUrl());
-    console.log("Email: " + profile.getEmail());
-
-    // The ID token you need to pass to your backend:
-    var id_token = googleUser.getAuthResponse().id_token;
-    console.log("ID Token: " + id_token);
-  }
 
 const Nav = () => {
 
@@ -54,10 +39,6 @@ const Nav = () => {
                             <li className="nav-item">
                                 <a className="nav-link" href="usercart"><i className="fas fa-shopping-cart"></i></a>
                             </li>
-                            <li className="nav-item">
-                            <div data-onsuccess="onSignIn" data-theme="dark" className="g-signin2"></div>
-                
-                    </li>
                         </ul>
                     </div>
                 </div>

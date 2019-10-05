@@ -3,7 +3,7 @@ import React from "react";
 function SaveButton(props) {
     return (
         <button id="saveBtn" type="button" className="btn btn-secondary btn-block save-btn" {...props} tabIndex="0">
-        <strong>ADD TO CART</strong>
+        <strong>Add to Cart</strong>
       </button>
     );
 }

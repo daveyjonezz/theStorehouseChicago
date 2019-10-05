@@ -5,7 +5,7 @@ import { StoryContainer, StoryRow, StoryCol } from "../components/Grid";
 import { StoryImage } from "../components/ImageCard";
 import Modal from "../components/Modal"
 import API from "../utils/API";
-import Footer from "../components/Footer"
+import {Footer} from "../components/Footer"
  
 const conStyle = {
     height: '80%',

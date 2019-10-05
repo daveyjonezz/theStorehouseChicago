@@ -1,8 +1,7 @@
 import React from "react";
-// import { Input, TextArea, FormBtn } from "../Form"
-// import { Col, Row } from "../Grid"
 
-function Footer() {
+
+export function Footer() {
     return (
 
         <div
@@ -17,4 +16,17 @@ function Footer() {
     );
 }
 
-export default Footer;
+export function Footer2() {
+    return (
+
+        <div
+            style={{ clear: "both", textAlign: "center", marginBottom: 0, padding: 0, backgroundColor: "transparent" }}
+            className="jumbotron"
+        >
+            <a href="https://stripe-thestorehousechicago.herokuapp.com/" target="_blank"><img src="/images/chicagoskyline.png" alt="chicago skyline" style={{ width: "20%" }} /></a>
+
+            {/* <h2>The StoreHouse Chicago</h2> */}
+        </div>
+
+    );
+}

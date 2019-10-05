@@ -132,38 +132,38 @@ return(
         </Fade>
     <Row>
         <Zoom duration={1000} delay={500}>
-            <Col size="md-6 banana">
+            <Col size="sm-8 banana">
                 <Carousel showThumbs={false} width="100vh" showStatus={false} >        
                             <div >
-                                <img alt="" src="/images/fruit1.jpg" />
-                                <p className="legend">Banana 1</p>
+                                <img alt="" src="/images/white-mens-1.jpg" />
+                                {/* <p className="legend">Banana 1</p> */}
                             </div>
                             <div >
-                                <img alt="" src="/images/banana2.jpg" />
-                                <p className="legend">Banana 2</p>
+                                <img alt="" src="/images/white-mens-2.jpg" />
+                                {/* <p className="legend">Banana 2</p> */}
                             </div>
                             <div >
-                                <img alt="" src="/images/banana3.jpg" />
-                                <p className="legend">Banana 3</p>
+                                <img alt="" src="/images/white-mens-3.jpg" />
+                                {/* <p className="legend">Banana 3</p> */}
                             </div>
                 </Carousel>
             </Col>
         </Zoom>
-        <Col size="md-2"></Col>
+        <Col size="sm-1"></Col>
         <Col size="md-4 avocado" >
             <Zoom right duration={1500} delay={1000}> 
-                <Carousel showThumbs={false} width="50vh" showStatus={false} id="avocado">        
+                <Carousel showThumbs={false} width="70vh" showStatus={false} id="avocado">        
                             <div >
-                                <img alt="" src="/images/fruit2.jpg" />
-                                <p className="legend">Avocado 1</p>
+                                <img alt="" src="/images/heather-womens-1.jpg" />
+                                {/* <p className="legend">Avocado 1</p> */}
                             </div>
                             <div >
-                                <img alt="" src="/images/avocado2.jpg" />
-                                <p className="legend">Avocado 2</p>
+                                <img alt="" src="/images/heather-womens-2.jpg" />
+                                {/* <p className="legend">Avocado 2</p> */}
                             </div>
                             <div >
-                                <img alt="" src="/images/avocado3.jpg" />
-                                <p className="legend">Avocado 3</p>
+                                <img alt="" src="/images/heather-womens-3.jpg" />
+                                {/* <p className="legend">Avocado 3</p> */}
                             </div>
                 </Carousel>
             </Zoom>
@@ -173,18 +173,18 @@ return(
     <Row>
         <Col size="md-4 lime">
             <Fade right duration={1500} delay={1000}>
-                <Carousel showThumbs={false} width="50vh" showStatus={false}>        
+                <Carousel showThumbs={false} width="70vh" showStatus={false}>        
                     <div>
-                        <img alt="" src="/images/fruit3.jpg" />
-                        <p className="legend">Lime 1</p>
+                        <img alt="" src="/images/peach-mens-1.jpg" />
+                        {/* <p className="legend">Lime 1</p> */}
                     </div>
                     <div>
-                        <img alt="" src="/images/lime2.jpg" />
-                        <p className="legend">Lime 2</p>
+                        <img alt="" src="/images/peach-mens-2.jpg" />
+                        {/* <p className="legend">Lime 2</p> */}
                     </div>
                     <div>
-                        <img alt="" src="/images/lime3.jpg" />
-                        <p className="legend">Lime 3</p>
+                        <img alt="" src="/images/peach-mens-3.jpg" />
+                        {/* <p className="legend">Lime 3</p> */}
                     </div>
                 </Carousel>
             </Fade>
@@ -193,16 +193,16 @@ return(
             <Fade bottom duration={1500}>
                 <Carousel showThumbs={false} width="100vh" showStatus={false} >        
                 <div >
-                    <img alt="" src="/images/fruit4.jpg" />
-                    <p className="legend">Mango 1</p>
+                    <img alt="" src="/images/storm-womens-1.jpg" />
+                    {/* <p className="legend">Mango 1</p> */}
                 </div>
                 <div >
-                    <img alt="" src="/images/mango2.jpg" />
-                    <p className="legend">Mango 2</p>
+                    <img alt="" src="/images/storm-womens-2.jpg" />
+                    {/* <p className="legend">Mango 2</p> */}
                 </div>
                 <div >
-                    <img alt="" src="/images/mango3.jpg" />
-                    <p className="legend">Mango 3</p>
+                    <img alt="" src="/images/storm-womens-3.jpg" />
+                    {/* <p className="legend">Mango 3</p> */}
                 </div>
                 </Carousel>
             </Fade>
@@ -226,12 +226,12 @@ return(
                   onChange={this.handleSizeChange}
                   sizeValue={this.state.sizeValue}>
                   <option defaultValue="">Size</option>
-                  <option value="XS">XS</option>
+                  {/* <option value="XS">XS</option> */}
                   <option value="S">S</option>
                   <option value="M">M</option>
                   <option value="L">L</option>
                   <option value="XL">XL</option>
-                  <option value="XXL">XXL</option>
+                  {/* <option value="XXL">XXL</option> */}
                 </select>
                 <select multiple={false} name="quantity"
                   onChange={this.handleQuantityChange}
@@ -242,12 +242,13 @@ return(
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
-                  <option value="6">6</option>
+                  {/* <option value="6">6</option>
                   <option value="7">7</option>
                   <option value="8">8</option>
                   <option value="9">9</option>
-                  <option value="10">10</option>
+                  <option value="10">10</option> */}
                 </select>
+                <br></br>
                 <br></br>
                 <SaveButton onClick={() => {
                   console.log('items', items)
@@ -280,9 +281,11 @@ return(
                 <img style={{height:"100px", borderRadius:"50%"}} alt={donation.item} src={donation.img} />
                 <p>{donation.description}</p>
                 <p>{donation.size}</p>
-                <textarea onChange={this.handleDonationAmount}
+                <input onChange={this.handleDonationAmount}
                   donationAmount={this.state.donationAmount}
-                  rows="1" cols="5" placeholder="$$$" className="userDonation"></textarea>
+                  rows="1" cols="5" placeholder="$$$" className="userDonation"></input>
+                   <br></br>
+                   <br></br>
                               <SaveButton onClick={() => {
                   console.log('donation', donation)
                   console.log('items-state', this.state)
@@ -291,6 +294,7 @@ return(
                   console.log(this.handleAddItemToCart, "this is in the save button click");
                 }
                 }>
+                 
                 </SaveButton></Col></>
             )
           })}
