@@ -80,10 +80,10 @@ class Cart extends Component {
               <br/>
               <br/>
               <p>Price ${usershoppingcart.price}.00</p>
-              <p>Color: {usershoppingcart.item}</p>
+              <p>Description: {usershoppingcart.item}</p>
               <p>Size: {usershoppingcart.size}</p>
               <p>Quantity: {usershoppingcart.quantity}</p>
-              <p>Donation: ${usershoppingcart.userDonation}</p>
+              {/* <p>Donation: ${usershoppingcart.userDonation}</p> */}
               <p><strong>Subtotal: ${usershoppingcart.price * usershoppingcart.quantity }.00</strong></p>
               <DeleteBtn onClick={() => this.handleItemDelete(usershoppingcart._id)} />
               </li>
