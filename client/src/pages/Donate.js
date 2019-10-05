@@ -186,7 +186,7 @@ class Donate extends Component {
                         <Col size="md-12">
                           <h4>{donation.item}</h4>
                           <img style={{ height: "100px", borderRadius: "50%" }} alt={donation.item} src={donation.img} />
-                          <p>{donation.description}</p>
+                          <p>{donation.memo}</p>
                           <p>{donation.size}</p>
                           <input onChange={this.handleDonationAmount}
                             donationAmount={this.state.donationAmount}
