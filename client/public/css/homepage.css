@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: center;
     color: white;
-    text-shadow: 0 0 5px #000;
+    /* text-shadow: 0 0 5px #000; */
   }
   
   /* The styling for the static div. */
